@@ -1,0 +1,399 @@
+<!-- This is only a dummy website of a hospital named(by me) as Hope Hospital. I have tried to keep it as short. At many places I have included dummy texts.Also I have tried to keep the page small and do not unneccesary expansion .For understanding from my point of view I have added comments in the middle of the code at various places.   -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Hope Hospital
+    </title>
+
+
+</head>
+
+<body>
+    <!-- navbar starts . I have made only homepage as working. -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <a class="navbar-brand" href="#">Hope Hospital </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Find A Doctor</a>
+                    </li>
+                    <!-- you can click . to know more about our Specialities -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Specialities
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Heart Institute</a></li>
+                            <li><a class="dropdown-item" href="#">Kidney and Urology Institute</a></li>
+
+                            <li><a class="dropdown-item" href="#">Cancer Institute</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Institute of Chest Surgery</a></li>
+                            <li><a class="dropdown-item" href="#">Institute of Digestive and Hepatobiliary Sciences</a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                    <!-- you can click here to know more about facilities we provide  -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Facilities
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Critical Care Units</a></li>
+                            <li><a class="dropdown-item" href="#">Emergency & Trauma Care</a></li>
+
+                            <li><a class="dropdown-item" href="#">Air Ambulance</a></li>
+
+
+                            <li><a class="dropdown-item" href="#">Lab Tests & Diagnostics</a></li>
+
+
+                        </ul>
+                    </li>
+                    <!-- you can click here to know more about our serices  -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Patient Support Services</a></li>
+                            <li><a class="dropdown-item" href="#">Home Sample Collection</a></li>
+
+                            <li><a class="dropdown-item" href="#">Medicine Delivery</a></li>
+
+
+                            <li><a class="dropdown-item" href="#">eCLINIC-Telemedicine Services</a></li>
+
+
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- i have added a modal with only dummy text .Do not take those text seriously for judjement. -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Register For Vaccination
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Register for first dose of CoviShield
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Visit cowin.gov.in to register.
+                                #Sorry For Inconvenience :(
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="d-flex">
+
+                    <button class="btn btn-outline-success" type="submit">Book An Appointment</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- this breadcrump  is just an for intro of this web page contents -->
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Oxygen
+                    Availability</a></li>
+            <li class="breadcrumb-item"><a href="#">Ventilators</a></li>
+            <li class="breadcrumb-item"><a href="#">Medicines</a></li>
+            <li class="breadcrumb-item"><a href="#">Vaccines Availability</a></li>
+            <li class="breadcrumb-item"><a href="#">Plasma Donors</a></li>
+            <li class="breadcrumb-item"><a href="#">Blood Donors</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+    </nav>
+    <!-- breadcrumb ends here -->
+    <!-- carousel starts here. Also it slides both automatically with fade and on clicking the button present at left and right. -->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="asme6.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>A Destination for Advanced Care</h1>
+                    <h3>Serving the nation in tough times</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="asme10.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>A Destination for Advanced Care</h1>
+                    <h3>Serving the humanity in tough times</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="asme8.jfif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>A Destination for Advanced Care </h1>
+                    <h3>Serving the nation in tough times</h3>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- carousel ends here and card starts here -->
+    <div class="card-group">
+        <div class="card my-2">
+            <img src="asme1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Oxygen
+                    Availability</h5>
+                <p class="card-text">We have an adequate number of oxygen cylinders in our stores. Also during these
+                    covid situation we are in touch with various other private oxygen suppliers to deal in the situation
+                    of emergency. </p>
+                <!-- i have used an useless api just to demonstrate that we can bring data from a resource and manipuate it according to our requirements like I have printed in the console .If we feel the need to be printed on dom we can also do that. -->
+                <!-- api available :) -->
+                <button type="button " class="btn btn-danger myBtn">Visit Our Store</button>
+                <button type="button " class="btn btn-danger myBtn">Check List </button>
+
+            </div>
+        </div>
+        <div class="card my-2">
+            <img src="asme2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Ventilators</h5>
+                <p class="card-text">We have a large number of ventilators with proper treatment equipments. In these
+                    Covid sitautions we are constantly incresing number of ventilators in our hospital. Very soon we
+                    will be able to treat more number of patients. </p>
+                <!-- api available :) -->
+                <button type="button " class="btn btn-danger myBtn">View our ventilator services</button>
+                <button type="button " class="btn btn-danger myBtn">Check Progress </button>
+            </div>
+        </div>
+        <div class="card my-2">
+            <img src="asme3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Medicines</h5>
+                <p class="card-text">We provide a wide range of medicines availabiity in our medical stores.We have a
+                    proper stock of medicines used in the treatment of Covid 19. In these covid situation we are
+                    providing medicines at a highly subsidised rate to ensure that everyone can afford it. </p>
+                <!-- api available :) -->
+                <button type="button myBtn" class="btn btn-danger">Order Now</button>
+                <button type="button myBtn" class="btn btn-danger">Check Avaiabiity </button>
+            </div>
+        </div>
+    </div>
+    <div class="card-group">
+        <div class="card my-2">
+            <img src="asme4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Vaccines Availability</h5>
+                <p class="card-text">With the help Of Ministry of Healthcare ,India we are providing vaccine to every
+                    eligible person.For this you need to register through our portal or you can visit our primary
+                    healthcare department to get vaccinated.</p>
+                <!-- api available :) -->
+                <button type="button " class="btn btn-danger myBtn">Register For Vaccination</button>
+                <button type="button " class="btn btn-danger myBtn">Check Avaiabiity </button>
+            </div>
+        </div>
+        <div class="card my-2">
+            <img src="asme5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Plasma Donors</h5>
+                <p class="card-text">We have a Plasma Bank in our hospital.In these Covid situation, we are properly
+                    managing our plasma bank and ensure that it reaches to every needy. We also have database of people
+                    recovered from Covid whom we can contact in emergency . </p>
+                <!-- api available :) -->
+                <button type="button " class="btn btn-danger myBtn">Contribute Your Plasma</button>
+                <button type="button " class="btn btn-danger myBtn">Check Avaiabiity </button>
+            </div>
+        </div>
+        <div class="card my-2">
+            <img src="asme11.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Blood Donors</h5>
+                <p class="card-text">We have a Blood Bank in our hospital.In these Covid situation, we are properly
+                    managing our blood bank and ensure that it reaches to every needy. You can also donate your blood by
+                    visiting our Blood Bank .We admire your contributions </p>
+                <!-- api available :) -->
+                <button type="button " class="btn btn-danger myBtn">Donate Your Blood</button>
+                <button type="button " class="btn btn-danger myBtn">Check Avaiabiity </button>
+            </div>
+        </div>
+    </div>
+    <!-- cards ends here -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!-- footer starts here -->
+    <footer class="footer">
+        <div class="container bottom_border">
+            <div class="row">
+                <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+
+                    <p class="mb10">Hope Hospital is leading from front in this critical situation.We have received a
+                        lot of appreciation for our dedication worldwide,</p>
+                    <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 Roorkee </p>
+                    <p><i class="fa fa-phone"></i> +91-9999878398 </p>
+                    <p><i class="fa fa fa-envelope"></i> info@example.com </p>
+
+
+                </div>
+
+
+                <div class=" col-sm-4 col-md  col-6 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+
+                    <ul class="footer_ul_amrc">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#"> Our Motto </a></li>
+                        <li><a href="#">Our History</a></li>
+                        <li><a href="#">Few words from founder</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Visit Our Store</a></li>
+                    </ul>
+
+                </div>
+
+
+                <div class=" col-sm-4 col-md  col-6 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+
+                    <ul class="footer_ul_amrc">
+                        <li><a href="#">Latest Info</a></li>
+                        <li><a href="#">Blood Bank</a></li>
+                        <li><a href="#">Plasma Bank</a></li>
+                        <li><a href="#">OPD</a></li>
+                        <li><a href="#">Our Achievements</a></li>
+                        <li><a href="#">Whats New</a></li>
+                    </ul>
+
+                </div>
+
+
+                <div class=" col-sm-4 col-md  col-12 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+
+
+                    <ul class="footer_ul2_amrc">
+                        <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+                            <p>Visit us at... <a href="#">https://www.abcdef.com/</a></p>
+                        </li>
+                        <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+                            <p>Follow Us at...<a href="#">https://www.ghijk.com/</a></p>
+                        </li>
+                        <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
+                            <p>Official at...<a href="#">https://www.lmnopq.com/</a></p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <ul class="foote_bottom_ul_amrc ">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <p class="text-center">Copyright @2021 | Designed With by <a href="#">Stark
+                    Industries</a></p>
+
+            <ul class="social_footer_ul ">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+
+        </div>
+
+    </footer>
+    <!-- footer ends here -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
